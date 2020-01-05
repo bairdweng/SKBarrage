@@ -85,6 +85,7 @@
     textDescriptor.strokeColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
     textDescriptor.strokeWidth = -1;
     textDescriptor.animationDuration = arc4random()%5 + 5;
+    textDescriptor.fixedSpeed = 20;
     textDescriptor.barrageCellClass = [SKPersonCell class];
     [self.barrageManager renderBarrageDescriptor:textDescriptor];
     [self performSelector:@selector(addNormalBarrage) withObject:nil afterDelay:1];

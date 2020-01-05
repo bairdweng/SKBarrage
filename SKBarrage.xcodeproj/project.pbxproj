@@ -188,23 +188,23 @@
 			isa = PBXGroup;
 			children = (
 				DAFAEC9823C18CBD00E5A9E8 /* CALayer+OCBarrage.h */,
-				DAFAEC9923C18CBD00E5A9E8 /* OCBarrageTextDescriptor.h */,
-				DAFAEC9A23C18CBD00E5A9E8 /* OCBarrageTrackInfo.h */,
-				DAFAEC9B23C18CBD00E5A9E8 /* OCBarrageManager.h */,
-				DAFAEC9C23C18CBD00E5A9E8 /* OCBarrageTextCell.m */,
-				DAFAEC9D23C18CBD00E5A9E8 /* OCBarrageDescriptor.m */,
-				DAFAEC9E23C18CBD00E5A9E8 /* OCBarrageCell.m */,
-				DAFAEC9F23C18CBD00E5A9E8 /* OCBarrageRenderView.h */,
-				DAFAECA023C18CBD00E5A9E8 /* OCBarrageTextDescriptor.m */,
 				DAFAECA123C18CBD00E5A9E8 /* CALayer+OCBarrage.m */,
-				DAFAECA223C18CBD00E5A9E8 /* OCBarrageManager.m */,
-				DAFAECA323C18CBD00E5A9E8 /* OCBarrageTrackInfo.m */,
 				DAFAECA423C18CBD00E5A9E8 /* OCBarrage.h */,
-				DAFAECA523C18CBD00E5A9E8 /* OCBarrageTextCell.h */,
-				DAFAECA623C18CBD00E5A9E8 /* OCBarrageHeader.h */,
-				DAFAECA723C18CBD00E5A9E8 /* OCBarrageRenderView.m */,
 				DAFAECA823C18CBD00E5A9E8 /* OCBarrageCell.h */,
+				DAFAEC9E23C18CBD00E5A9E8 /* OCBarrageCell.m */,
 				DAFAECA923C18CBD00E5A9E8 /* OCBarrageDescriptor.h */,
+				DAFAEC9D23C18CBD00E5A9E8 /* OCBarrageDescriptor.m */,
+				DAFAECA623C18CBD00E5A9E8 /* OCBarrageHeader.h */,
+				DAFAEC9B23C18CBD00E5A9E8 /* OCBarrageManager.h */,
+				DAFAECA223C18CBD00E5A9E8 /* OCBarrageManager.m */,
+				DAFAEC9F23C18CBD00E5A9E8 /* OCBarrageRenderView.h */,
+				DAFAECA723C18CBD00E5A9E8 /* OCBarrageRenderView.m */,
+				DAFAECA523C18CBD00E5A9E8 /* OCBarrageTextCell.h */,
+				DAFAEC9C23C18CBD00E5A9E8 /* OCBarrageTextCell.m */,
+				DAFAEC9923C18CBD00E5A9E8 /* OCBarrageTextDescriptor.h */,
+				DAFAECA023C18CBD00E5A9E8 /* OCBarrageTextDescriptor.m */,
+				DAFAEC9A23C18CBD00E5A9E8 /* OCBarrageTrackInfo.h */,
+				DAFAECA323C18CBD00E5A9E8 /* OCBarrageTrackInfo.m */,
 			);
 			path = OCBarrage;
 			sourceTree = "<group>";
@@ -548,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDY6959JRF;
 				INFOPLIST_FILE = SKBarrage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,6 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDY6959JRF;
 				INFOPLIST_FILE = SKBarrage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

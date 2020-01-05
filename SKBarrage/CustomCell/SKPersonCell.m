@@ -25,15 +25,21 @@
 }
 - (void)updateSubviewsData {
     [super updateSubviewsData];
-    
-//    [self.testImageView setImage:[UIImage imageNamed:@"chaoren_left"]];
     [self.testImageView setImage:[UIImage imageNamed:@"chaoren_left"]];
-//    [self.middleImageView setBackgroundColor:[UIColor colorWithRed:1.00 green:0.83 blue:0.26 alpha:1.00]];
-//    [self.rightImageView setImage:[UIImage imageNamed:@"chaoren_right"]];
 }
 - (void)layoutContentSubviews {
     [super layoutContentSubviews];
     self.testImageView.frame = CGRectMake(0, 0, 40, 40);
+    CGFloat middleImageViewW = CGRectGetWidth(self.textLabel.bounds);
+    CGFloat middleImageViewH = 19;
+    CGFloat middleImageViewX = CGRectGetMaxX(self.testImageView.bounds) + 10;
+    self.middleView.frame = CGRectMake(middleImageViewX, 10, middleImageViewW, middleImageViewH);
+    self.textLabel.center = self.middleView.center;
+//    self.backgroundColor = [UIColor blueColor];
+//    self.layer.cornerRadius = 5;
+//    self.layer.borderWidth = 1;
+//    self.layer.borderColor = [UIColor blackColor].CGColor;
+
 }
 //- (void)convertContentToImage {
 //
@@ -58,6 +64,11 @@
     }
     return _testImageView;
 }
-
+- (UIView *)middleView {
+    if (!_middleView) {
+        _middleView = [UIView new];
+    }
+    return _middleView;
+}
 
 @end
