@@ -94,7 +94,24 @@
 }
 
 - (void)addBarrageAnimationWithDelegate:(id<CAAnimationDelegate>)animationDelegate {
+    if (!self.superview) {
+        return;
+    }
     
+    CGPoint startCenter = CGPointMake(CGRectGetMaxX(self.superview.bounds) + CGRectGetWidth(self.bounds)/2, self.center.y);
+    CGPoint stopCenter = CGPointMake(CGRectGetMidX(self.superview.bounds), self.center.y);
+    CGPoint endCenter = CGPointMake(-(CGRectGetWidth(self.bounds)/2), self.center.y);
+    
+    CAKeyframeAnimation *walkAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    walkAnimation.values = @[[NSValue valueWithCGPoint:startCenter], [NSValue valueWithCGPoint:stopCenter], [NSValue valueWithCGPoint:stopCenter], [NSValue valueWithCGPoint:endCenter]];
+    walkAnimation.keyTimes = @[@(0.0), @(0.25), @(0.75), @(1.0)];
+    walkAnimation.duration = self.barrageDescriptor.animationDuration;
+    walkAnimation.repeatCount = 1;
+    walkAnimation.delegate =  animationDelegate;
+    walkAnimation.removedOnCompletion = NO;
+    walkAnimation.fillMode = kCAFillModeForwards;
+    
+    [self.layer addAnimation:walkAnimation forKey:kBarrageAnimation];
 }
 
 - (void)updateSubviewsData {

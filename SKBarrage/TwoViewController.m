@@ -9,12 +9,16 @@
 #import "TwoViewController.h"
 #import "OCBarrage.h"
 #import "SKPersonCell.h"
+#import "PHRoomAwardShareItemView.h"
+#import "PHRoomSharingBarrageView.h"
 @interface TwoViewController () {
     
     int _barrageCount;
     
 }
 @property (nonatomic, strong) OCBarrageManager *barrageManager;
+
+@property (nonatomic, strong) PHRoomSharingBarrageView *barrageView;
 
 @end
 
@@ -25,6 +29,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+//    self.barrageView = [[PHRoomSharingBarrageView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 100)];
+//
+//    self.barrageView.backgroundColor = [UIColor grayColor];
+//    [self.view addSubview:self.barrageView];
+    
+    
     [self setUpView];
     [self setToolView];
     // Do any additional setup after loading the view.
@@ -32,7 +43,7 @@
 - (void)setUpView {
     self.barrageManager = [[OCBarrageManager alloc] init];
     [self.view addSubview:self.barrageManager.renderView];
-    self.barrageManager.renderView.frame = CGRectMake(0.0, 100, self.view.frame.size.width, 400);
+    self.barrageManager.renderView.frame = CGRectMake(0.0, 100, self.view.frame.size.width, 100);
     self.barrageManager.renderView.backgroundColor = [UIColor redColor];
     self.barrageManager.renderView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
@@ -79,14 +90,16 @@
            NSLog(@"弹幕的cell被点击啦======%@",cell);
        };
     textDescriptor.text = [NSString stringWithFormat:@"~欢迎全民超人大驾光临2~"];
+    
     textDescriptor.textColor = [UIColor blackColor];
     textDescriptor.positionPriority = OCBarragePositionMiddle;
-    textDescriptor.textFont = [UIFont systemFontOfSize:17.0];
+    textDescriptor.textFont = [UIFont systemFontOfSize:14];
     textDescriptor.strokeColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
-    textDescriptor.strokeWidth = -1;
-    textDescriptor.animationDuration = arc4random()%5 + 5;
-    textDescriptor.fixedSpeed = 20;
-    textDescriptor.barrageCellClass = [SKPersonCell class];
+//    textDescriptor.strokeWidth = -1;
+//    textDescriptor.borderWidth = 1;
+//    textDescriptor.cornerRadius = 10;
+    textDescriptor.fixedSpeed = 30;
+    textDescriptor.barrageCellClass = [PHRoomAwardShareItemView class];
     [self.barrageManager renderBarrageDescriptor:textDescriptor];
     [self performSelector:@selector(addNormalBarrage) withObject:nil afterDelay:1];
 }

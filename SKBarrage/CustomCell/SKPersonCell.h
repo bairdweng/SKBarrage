@@ -8,11 +8,8 @@
 
 #import "OCBarrageTextCell.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface SKPersonCell : OCBarrageTextCell
 @property(nonatomic, strong)UIView *middleView;
 @property (nonatomic, strong) UIImageView *testImageView;
 @end
-
-NS_ASSUME_NONNULL_END

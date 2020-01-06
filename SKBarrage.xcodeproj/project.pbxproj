@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0C7B5523C32025008FD3D2 /* PHRoomSharingBarrageManage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0C7B5423C32025008FD3D2 /* PHRoomSharingBarrageManage.m */; };
+		DA27E36023C318C500E9D2FC /* PHRoomSharingBarrageItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA27E35F23C318C500E9D2FC /* PHRoomSharingBarrageItemView.m */; };
+		DA55706C23C333CE007284CC /* PHRoomAwardShareItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55706B23C333CE007284CC /* PHRoomAwardShareItemView.m */; };
+		DAD013C023C316C10077E3C3 /* PHRoomSharingBarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD013BF23C316C10077E3C3 /* PHRoomSharingBarrageView.m */; };
 		DAFAEC6423C1867C00E5A9E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFAEC6323C1867C00E5A9E8 /* AppDelegate.m */; };
 		DAFAEC6723C1867C00E5A9E8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFAEC6623C1867C00E5A9E8 /* SceneDelegate.m */; };
 		DAFAEC6A23C1867C00E5A9E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFAEC6923C1867C00E5A9E8 /* ViewController.m */; };
@@ -51,6 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0C7B5323C32025008FD3D2 /* PHRoomSharingBarrageManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRoomSharingBarrageManage.h; sourceTree = "<group>"; };
+		DA0C7B5423C32025008FD3D2 /* PHRoomSharingBarrageManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRoomSharingBarrageManage.m; sourceTree = "<group>"; };
+		DA27E35E23C318C500E9D2FC /* PHRoomSharingBarrageItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRoomSharingBarrageItemView.h; sourceTree = "<group>"; };
+		DA27E35F23C318C500E9D2FC /* PHRoomSharingBarrageItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRoomSharingBarrageItemView.m; sourceTree = "<group>"; };
+		DA55706A23C333CE007284CC /* PHRoomAwardShareItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHRoomAwardShareItemView.h; sourceTree = "<group>"; };
+		DA55706B23C333CE007284CC /* PHRoomAwardShareItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHRoomAwardShareItemView.m; sourceTree = "<group>"; };
+		DAD013BE23C316C10077E3C3 /* PHRoomSharingBarrageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHRoomSharingBarrageView.h; sourceTree = "<group>"; };
+		DAD013BF23C316C10077E3C3 /* PHRoomSharingBarrageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHRoomSharingBarrageView.m; sourceTree = "<group>"; };
 		DAFAEC5F23C1867C00E5A9E8 /* SKBarrage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKBarrage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFAEC6223C1867C00E5A9E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAFAEC6323C1867C00E5A9E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +135,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA27E35D23C3189600E9D2FC /* CustomShareView */ = {
+			isa = PBXGroup;
+			children = (
+				DAD013BE23C316C10077E3C3 /* PHRoomSharingBarrageView.h */,
+				DAD013BF23C316C10077E3C3 /* PHRoomSharingBarrageView.m */,
+				DA27E35E23C318C500E9D2FC /* PHRoomSharingBarrageItemView.h */,
+				DA27E35F23C318C500E9D2FC /* PHRoomSharingBarrageItemView.m */,
+				DA0C7B5323C32025008FD3D2 /* PHRoomSharingBarrageManage.h */,
+				DA0C7B5423C32025008FD3D2 /* PHRoomSharingBarrageManage.m */,
+			);
+			path = CustomShareView;
+			sourceTree = "<group>";
+		};
 		DAFAEC5623C1867C00E5A9E8 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +171,7 @@
 		DAFAEC6123C1867C00E5A9E8 /* SKBarrage */ = {
 			isa = PBXGroup;
 			children = (
+				DA27E35D23C3189600E9D2FC /* CustomShareView */,
 				DAFAECC323C1B8F500E5A9E8 /* CustomCell */,
 				DAFAECB823C1AC3700E5A9E8 /* Sources */,
 				DAFAEC9723C18CBD00E5A9E8 /* OCBarrage */,
@@ -226,6 +252,8 @@
 			children = (
 				DAFAECB523C1938500E5A9E8 /* SKPersonCell.h */,
 				DAFAECB623C1938500E5A9E8 /* SKPersonCell.m */,
+				DA55706A23C333CE007284CC /* PHRoomAwardShareItemView.h */,
+				DA55706B23C333CE007284CC /* PHRoomAwardShareItemView.m */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -365,13 +393,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD013C023C316C10077E3C3 /* PHRoomSharingBarrageView.m in Sources */,
 				DAFAECB423C18E0500E5A9E8 /* TwoViewController.m in Sources */,
 				DAFAEC6A23C1867C00E5A9E8 /* ViewController.m in Sources */,
 				DAFAEC6423C1867C00E5A9E8 /* AppDelegate.m in Sources */,
+				DA0C7B5523C32025008FD3D2 /* PHRoomSharingBarrageManage.m in Sources */,
 				DAFAECAF23C18CBD00E5A9E8 /* OCBarrageManager.m in Sources */,
 				DAFAECB723C1938500E5A9E8 /* SKPersonCell.m in Sources */,
 				DAFAECAE23C18CBD00E5A9E8 /* CALayer+OCBarrage.m in Sources */,
 				DAFAECAA23C18CBD00E5A9E8 /* OCBarrageTextCell.m in Sources */,
+				DA27E36023C318C500E9D2FC /* PHRoomSharingBarrageItemView.m in Sources */,
+				DA55706C23C333CE007284CC /* PHRoomAwardShareItemView.m in Sources */,
 				DAFAECAB23C18CBD00E5A9E8 /* OCBarrageDescriptor.m in Sources */,
 				DAFAECAC23C18CBD00E5A9E8 /* OCBarrageCell.m in Sources */,
 				DAFAEC7523C1867D00E5A9E8 /* main.m in Sources */,
